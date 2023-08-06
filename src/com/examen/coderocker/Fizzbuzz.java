@@ -6,9 +6,9 @@ import java.util.List;
 public class Fizzbuzz {
     public static void main(String[] args) {
         int[] num = new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
-       System.out.println( new Fizzbuzz().fizzBuzz(num));
+        List<String> output = new Fizzbuzz().fizzBuzz(num);
+       System.out.println( /*new Fizzbuzz().fizzBuzz(num)*/output);
     }
-
     public List<String> fizzBuzz(int[] n) {
         List<String> res = new ArrayList();
         for (int i = 1; i <= n.length; i++) {
